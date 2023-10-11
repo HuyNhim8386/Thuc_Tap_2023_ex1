@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Bài tập</title>
+</head>
+
+<body>
+    <header>
+        <div id = "header_max" class="grid_header_collum">
+            <img src="asset/img/logo.png" alt="logo">
+            <nav class="navbar">
+                <ul id="the_menu">
+                    <li>
+                        <a href="#">Home
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">Portfolio 
+                                    <i style="float: right;" id = "icon_right" class='bx bx-chevron-right'></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Contact Us 1 </a></li>
+                                    <li><a href="#">Contact Us 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact Us 1 </a></li>
+                            <li><a href="#">Contact Us 2</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Services </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Pages
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">Portfolio </a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Services </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Shop
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Product
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Categories
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Blog
+                            <i class='bx bx-chevron-right bx-rotate-90' ></i>
+                        </a>  
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="grid_header_collum_icon icon_giohang">
+                    <li>
+                        <a style="font-size: 250%; border: 1px;"><i id="icon_search" class='bx bx-search-alt-2' ></i></a>
+                    </li>
+                    <li> 
+                        <a style="font-size: 250%;"><i id="icon_cart" class='bx bx-cart' ></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!--Mobile and Tablet-->
+        <nav id="navbar_mobile">
+            <div>
+                <img src="asset/img/logo.png" alt="logo">
+            </div>
+            
+            <div class="navbar-menu">
+                <div class="left" onclick="document.getElementById('navbar-menu__list').classList.toggle('active')">
+                    <img src="asset/img/hamburger-menu-white.svg" alt="menu-icon" width="25">
+                    <span>menu</span>
+                </div>
+                <div class="right">
+                    <img src="asset/img/search-icon-png-9993.png" alt="search-icon" width="50">
+                </div>
+                <ul class="navbar-menu__list" id="navbar-menu__list">
+                    <li id = "menu_con" class="item" onclick="document.getElementById('navbar-sub-menu').classList.toggle('active1')"><a href="#"> home</a>
+                        <ul class="navbar-sub-menu" id="navbar-sub-menu">
+                            <li class="item"><a href="">portfolio</a></li>
+                            <li class="item"><a href="">contact us 1</a></li>
+                            <li class="item"><a href="">contact us 2</a></li>
+                            <li class="item"><a href="">about us</a></li>
+                            <li class="item"><a href="">about me</a></li>
+                            <li class="item"><a href="">our team</a></li>
+                            <li class="item"><a href="">our service</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#"> page</a></li>
+                    <li class="item"><a href="#"> shop</a></li>
+                    <li class="item"><a href="#"> product</a></li>
+                    <li class="item"><a href="#"> catogories</a></li>
+                    <li class="item"><a href="#"> blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id = "flex_colum_body">
+            <div id="slider">
+                <div class="container">
+                    <div class="slide-container">
+                        
+                        <div class="main-slide">
+
+                            <div class="slider">
+                                <div class="slides">
+                                  <input type="radio" name="radio-btn" id="radio1" checked>
+                                  <input type="radio" name="radio-btn" id="radio2">
+                                  <input type="radio" name="radio-btn" id="radio3">
+                                    <div class="slide first">
+                                        <img src="asset/img/slider-04-3.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="asset/img/slider-04-3.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="asset/img/slider-04-3.jpg" alt="">
+                                    </div>
+                                    <div class="navigation-auto">
+                                        <div class="auto-btn1"></div>
+                                        <div class="auto-btn2"></div>
+                                        <div class="auto-btn3"></div>
+                                    </div>
+                                </div>
+                                <div class="navigation-manual">
+                                  <label for="radio1" class="manual-btn"></label>
+                                  <label for="radio2" class="manual-btn"></label>
+                                  <label for="radio3" class="manual-btn"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-slide">
+                            <div class="slide-item">
+                                <img src="asset/img/slider-04-top-right.jpg" alt="aside-slide1">                    
+                            </div>
+                            <div class="slide-item">
+                                <img src="asset/img/slider-04-bottom-right.jpg" alt="aside-slide2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slider_mobile">
+                <div class="slide-item">
+                    <img style="width: 100%; height: auto;" src="asset/img/slider-04-3.jpg" alt="main-slide-1">
+                </div>
+                <div class="slide-item">
+                    <img style="width: 80%; height: auto;" src="asset/img/slider-04-top-right.jpg" alt="aside-slide1">                    
+                </div>
+                <div class="slide-item">
+                    <img style="width: 80%; height: auto;" src="asset/img/slider-04-bottom-right.jpg" alt="aside-slide2">
+                </div>
+            </div>
+            <div  id="menu_sp">
+                <a href="#">FEATURED</a>
+                <a href="#">CLOTHING</a>
+                <a href="#">COLLECTIONS</a>
+            </div>
+            <div class="grid_collum_sanpham">
+                <div class="grid_row_sanpham">
+                    <img src="asset/img/product-23-390x520.jpg" alt=""><br>
+                    <div class="grid_row_TTsanpham">
+                        <a class="laptop_bag" href="#">LAPTOP BAGS</a><br>
+                        <p>Veston For Business</p><br>
+                        <div class="grid_collum_gia" style="text-align: center;">
+                            <p class="giamgia">£85.00</p>
+                            <p class="gia_moi">£75.00</p>
+                        </div>
+                        <input class="button_add_cart" type="button" value="ADD TO CART">
+                    </div>
+                </div>
+                <div class="grid_row_sanpham">
+                    <img src="asset/img/product-23-390x520.jpg" alt=""><br>
+                    <div class="grid_row_TTsanpham">
+                        <a class="laptop_bag" href="#">LAPTOP BAGS</a><br>
+                        <p>Veston For Business</p><br>
+                        <div class="grid_collum_gia" style="text-align: center;">
+                            <p class="giamgia">£85.00</p>
+                            <p class="gia_moi">£75.00</p>
+                        </div>
+                        <input class="button_add_cart" type="button" value="ADD TO CART">
+                    </div>
+                </div>
+                <div class="grid_row_sanpham">
+                    <img src="asset/img/product-23-390x520.jpg" alt=""><br>
+                    <div class="grid_row_TTsanpham">
+                        <a class="laptop_bag" href="#">LAPTOP BAGS</a><br>
+                        <p>Veston For Business</p><br>
+                        <div class="grid_collum_gia" style="text-align: center;">
+                            <p class="giamgia">£85.00</p>
+                            <p class="gia_moi">£75.00</p>
+                        </div>
+                        <input class="button_add_cart" type="button" value="ADD TO CART">
+                    </div>
+                </div>
+                <div class="grid_row_sanpham">
+                    <img src="asset/img/product-23-390x520.jpg" alt=""><br>
+                    <div class="grid_row_TTsanpham">
+                        <a class="laptop_bag" href="#">LAPTOP BAGS</a><br>
+                        <p>Veston For Business</p><br>
+                        <div class="grid_collum_gia" style="text-align: center;">
+                            <p class="giamgia">£85.00</p>
+                            <p class="gia_moi">£75.00</p>
+                        </div>
+                        <input class="button_add_cart" type="button" value="ADD TO CART">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="thong_tin" class="sanpham_con">
+            <p>YOUR NAME*</p>
+            <input class="input_tt" type="text">
+            <p>EMAIL*</p>
+            <input class="input_tt" type="text">
+            <p>YOUR MASSAGE*</p>
+            <textarea class="input_tt ghichu" placeholder=""></textarea>
+            <input class="button_add_cart send" type="button" value="SEND">
+        </div>  
+    </main>
+    
+    <footer>
+        <div id="footer" style="color: #7B7B7B;">
+            <div class="footer2">
+                <p class="footer_td">LOCATION</p><br>
+                <p>580, Broadway, 1002 - New York NY-U</p><br>
+                <p>Tel: +1 212345321</p><br>
+                <p>Email: info@villatheme.com</p>
+            </div>
+            <div class="footer1 footer2">
+                <p class="footer_td">HELP</p><br>
+                <p>How to Buy</p><br>
+                <p>General Information</p><br>
+                <p>Payment</p><br>
+                <p>Shipping</p><br>
+                <p>Exchanges & Return</p>
+            </div>
+            <div class="footer1 footer2">
+                <p class="footer_td">POLICIES</p><br>
+                <p>Environmental Policy</p><br>
+                <p>For Buyers</p><br>
+                <p>For Sellers</p><br>
+                <p>Sellers Information Center</p><br>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer1 footer2">
+                <p class="footer_td">COMPANY</p><br>
+                <p>About Us</p><br>
+                <p>Contact</p><br>
+                <p>Our Stores</p><br>
+                <p>FAQs</p><br>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
